@@ -35,5 +35,14 @@ simple tasklist within the joomla dashboard
 
 --
 
+create admin overrides and res-style the admin
+add a few extra options to be able to change the color and button sets and sizes of your admin
+
+--
+
+enhance the logged in users on the dahsboard to be better ;)
+
+--
+
 
 
