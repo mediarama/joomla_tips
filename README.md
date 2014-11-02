@@ -44,5 +44,6 @@ enhance the logged in users on the dahsboard to be better ;)
 
 --
 
+possibly integrate datatables? just have to look further into teh default filtering systems and see how i may be able to achive this easily without affecting the core
 
 
