@@ -1,0 +1,74 @@
+<?php
+
+// external database connection using Joomla's class
+// note that $db is renamed to something else so as not
+// to clash with joomla's core database queries
+
+
+$option['driver'] 			                                        = 'mysql';
+
+// each host will be different so you may have to email your hosting support
+// and ask them how to set up an external mysql connection 
+// and what address to use for host
+
+$option['host'] 			                                          = '88.888.888.888'; 
+$option['user'] 			                                          = 'userman';
+$option['password'] 		                                        = 'password1';
+$option['database'] 		                                        = 'external_db_name';
+
+// note that if you do have a prefix
+// on your external tables
+// you can add the #__mytablename to the query
+
+$option['prefix'] 			                                        = 'blah';
+
+$db_ext 					                                              = & JDatabase::getInstance($option);
+
+          if ( JError::isError($db_ext) ) { 
+          
+          jexit('Database Error: ' . $db_ext->toString() ); 
+          
+          }
+
+          if ($db_ext->getErrorNum() > 0) { 
+          
+          JError::raiseError(500, 'JDatabase::getInstance: Could not connect to database');
+          
+          }
+
+// now we can query like so
+
+$i = 1;
+
+// important or it wont work 
+// notice it says $db_ext and not $db
+
+$db_ext = JFactory::getDbo(); 
+
+// now the query itself
+
+$sql = $db_ext->getQuery(true); 
+$sql->select("* FROM #__mytablename WHERE id='$i'");
+$db_ext->setQuery($sql);
+$items = $db_ext->loadObjectList();
+
+// now the foreach loop
+
+foreach ($items as $item){ 
+
+$name = $item->name;
+
+?>
+
+<h1>My name is <?php echo $name;?></h1>
+<p>And i am data from a external database, but i am displayed using joomla's database class.</p>
+
+<?php } // end loop ?>
+
+<?php
+
+// for more info on the types of joomla queries 
+// eg: numrows etc...
+//  go to http://docs.joomla.org/Selecting_data_using_JDatabase
+
+?>
