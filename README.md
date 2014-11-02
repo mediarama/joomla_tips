@@ -7,10 +7,10 @@ Things i would love to do to jmake joomla even better:
 
 Create a simple yet effective multimedia / tabbed system within the article dit view. With the ability to keep adding feilds for.
 
--Images
--Videos
--Attachments
--Links
+--Images
+--Videos
+--Attachments
+--Links
 -Audio Tracks
 -Forms
 -Maps
