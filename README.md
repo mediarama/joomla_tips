@@ -5,16 +5,19 @@ A area for joomla tips and discoveries i have. I will pop them here so other joo
 
 Things i would love to do to jmake joomla even better:
 
-Create a simple yet effective multimedia / tabbed system within the article dit view. With the ability to keep adding feilds for.
+Create a simple yet effective multimedia / tabbed system within the article dit view. 
+
+With the ability to keep adding feilds for.
 
 - Images
 - Videos
 - Attachments
---Links
--Audio Tracks
--Forms
--Maps
--Widgets ( tabbed nav, toggle slider / formatted blocks )
+- Links
+- Audio Tracks
+- Forms
+- Maps
+- Widgets ( tabbed nav, toggle slider / formatted blocks, etc... )
+- etc...
 
 ---
 
