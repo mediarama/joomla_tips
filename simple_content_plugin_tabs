@@ -1,0 +1,13 @@
+As follows
+
+Create a this file structure:
+
+- extra ( folder )
+- extra.xml ( inside extra folder )
+
+- en-GB.plg_content_extra.ini
+- extra.php
+- extra.xml
+
+----
+
